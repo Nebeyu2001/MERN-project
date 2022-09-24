@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 const books = [
   {
     author: "Chinua Achebe",
@@ -85,6 +84,11 @@ const books = [
     title: "One Thousand and One Nights",
     year: 1200,
     id: 6,
+    category: "unkown",
+    price: 20.0,
+    countInStock: 7,
+    rating: 3.5,
+    numReviews: 15,
   },
   {
     author: "Unknown",
@@ -96,6 +100,11 @@ const books = [
     title: "Njál's Saga",
     year: 1350,
     id: 7,
+    category: "Fiction",
+    price: 25.0,
+    countInStock: 7,
+    rating: 2.5,
+    numReviews: 10,
   },
   {
     author: "Jane Austen",
@@ -107,6 +116,11 @@ const books = [
     title: "Pride and Prejudice",
     year: 1813,
     id: 8,
+    category: "Fiction",
+    price: 20.0,
+    countInStock: 7,
+    rating: 4.5,
+    numReviews: 10,
   },
   {
     author: "Honoré de Balzac",
