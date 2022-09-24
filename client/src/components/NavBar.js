@@ -1,11 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 function BasicExample() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" collapseOnselect>
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="/">Book-Shop</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
