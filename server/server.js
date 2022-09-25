@@ -2,10 +2,13 @@ const express = require("express");
 const dotenv = require("dotenv");
 const books = require("./data/books");
 const mongoose = require("mongoose");
+const connectDB = require("./config/db.js");
 
 dotenv.config();
 
 const app = express();
+
+connectDB();
 
 app.listen(5000, console.log("server running on port 5000"));
 
