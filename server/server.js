@@ -1,5 +1,9 @@
 const express = require("express");
+const dotenv = require("dotenv");
 const books = require("./data/books");
+const mongoose = require("mongoose");
+
+dotenv.config();
 
 const app = express();
 

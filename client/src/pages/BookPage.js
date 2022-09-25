@@ -17,8 +17,7 @@ const BookPage = ({ match }) => {
     };
 
     fetchBook();
-    // eslint-disable-next-line
-  }, []);
+  }, [match]);
 
   return (
     <>
