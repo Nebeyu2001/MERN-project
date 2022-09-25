@@ -18,7 +18,7 @@ const books = [
   {
     author: "Hans Christian Andersen",
     country: "Denmark",
-    imageLink: "images/fairy-tales.jpg",
+    imageLink: "/images/fairy-tales.jpg",
     language: "Danish",
     link: "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
     pages: 784,
@@ -34,7 +34,7 @@ const books = [
   {
     author: "Dante Alighieri",
     country: "Italy",
-    imageLink: "images/the-divine-comedy.jpg",
+    imageLink: "/images/the-divine-comedy.jpg",
     language: "Italian",
     link: "https://en.wikipedia.org/wiki/Divine_Comedy\n",
     pages: 928,
@@ -50,7 +50,7 @@ const books = [
   {
     author: "Unknown",
     country: "Sumer and Akkadian Empire",
-    imageLink: "images/the-epic-of-gilgamesh.jpg",
+    imageLink: "/images/the-epic-of-gilgamesh.jpg",
     language: "Akkadian",
     link: "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
     pages: 160,
@@ -61,7 +61,7 @@ const books = [
   {
     author: "Unknown",
     country: "Achaemenid Empire",
-    imageLink: "images/the-book-of-job.jpg",
+    imageLink: "/images/the-book-of-job.jpg",
     language: "Hebrew",
     link: "https://en.wikipedia.org/wiki/Book_of_Job\n",
     pages: 176,
@@ -77,7 +77,7 @@ const books = [
   {
     author: "Unknown",
     country: "India/Iran/Iraq/Egypt/Tajikistan",
-    imageLink: "images/one-thousand-and-one-nights.jpg",
+    imageLink: "/images/one-thousand-and-one-nights.jpg",
     language: "Arabic",
     link: "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
     pages: 288,
@@ -93,7 +93,7 @@ const books = [
   {
     author: "Unknown",
     country: "Iceland",
-    imageLink: "images/njals-saga.jpg",
+    imageLink: "/images/njals-saga.jpg",
     language: "Old Norse",
     link: "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga\n",
     pages: 384,
@@ -109,7 +109,7 @@ const books = [
   {
     author: "Jane Austen",
     country: "United Kingdom",
-    imageLink: "images/pride-and-prejudice.jpg",
+    imageLink: "/images/pride-and-prejudice.jpg",
     language: "English",
     link: "https://en.wikipedia.org/wiki/Pride_and_Prejudice\n",
     pages: 226,
