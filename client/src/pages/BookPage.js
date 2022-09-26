@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
+// import { LinkContainer } from "react-router-bootstrap";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 import axios from "axios";
 
@@ -25,8 +26,8 @@ const BookPage = ({ match }) => {
         Go Back
       </Link>
       <Row>
-        <Col md={6}>
-          <Image src={book.imageLink} alt={book.title} fluid />
+        <Col md={5}>
+          <Image src={book.image} alt={book.title} fluid />
         </Col>
         <Col md={3}>
           <ListGroup variant="flush">
@@ -38,9 +39,10 @@ const BookPage = ({ match }) => {
             </ListGroup.Item>
             <ListGroup.Item> Author : {book.author}</ListGroup.Item>
             <ListGroup.Item>price: ${book.price}</ListGroup.Item>
+            <ListGroup.Item>about: {book.description}</ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col md={3}>
+        <Col md={2}>
           <Card>
             <ListGroup variant="flush">
               <ListGroup.Item>

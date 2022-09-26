@@ -16,7 +16,7 @@ const bookSchema = new Schema(
     numReviews: Number,
     price: { type: Number, default: 0 },
     countInStock: { type: Number, default: 0 },
-    author: { type: Number, default: 0 },
+    author: { type: String },
   },
   {
     timestamps: true,

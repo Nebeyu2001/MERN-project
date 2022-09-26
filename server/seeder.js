@@ -29,7 +29,22 @@ const importData = async () => {
 
     console.log("Data Imported");
   } catch (error) {
-    console.error(`{error}`);
+    console.error(`${error}`);
     process.exit(1);
   }
 };
+
+const deportData = async () => {
+  try {
+    await Order.deleteMany();
+    await Book.deleteMany();
+    await User.deleteMany();
+    console.log("data deported");
+  } catch (error) {
+    console.error(`${error}`);
+    process.exit(1);
+  }
+};
+
+importData();
+// deportData();
