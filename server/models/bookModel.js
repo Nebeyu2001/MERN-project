@@ -13,9 +13,10 @@ const bookSchema = new Schema(
     category: String,
     description: String,
     rating: { type: Number, default: 0 },
-    numReviews: number,
+    numReviews: Number,
     price: { type: Number, default: 0 },
     countInStock: { type: Number, default: 0 },
+    author: { type: Number, default: 0 },
   },
   {
     timestamps: true,
