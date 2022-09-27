@@ -17,7 +17,7 @@ import Rating from "../components/Rating";
 import { listBookDetails } from "../actions/bookAction";
 
 const BookPage = ({ history, match }) => {
-  const [qty, setQty] = useState(0);
+  const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
 
   const bookDetails = useSelector((state) => state.bookDetails);

@@ -1,30 +1,13 @@
 const express = require("express");
-const asyncHanlder = require("express-async-handler");
+
+const bookController = require("../controllers/bookController");
 
 const router = express.Router();
-const Book = require("../models/bookModel");
+
 // fetch all books
-router.get(
-  "/",
-  asyncHanlder(async (req, res) => {
-    const books = await Book.find({});
-    res.json(books);
-  })
-);
+router.get("/", bookController.getBooks);
 
 // fetch signle book
-router.get(
-  "/:id",
-  asyncHanlder(async (req, res) => {
-    const book = await Book.findById(req.params.id);
-
-    if (book) {
-      res.json(book);
-    } else {
-      res.status(404);
-      throw new Error("Book not found");
-    }
-  })
-);
+router.get("/:id", bookController.getBookById);
 
 module.exports = router;
