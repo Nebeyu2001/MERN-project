@@ -4,10 +4,13 @@ const mongoose = require("mongoose");
 const connectDB = require("./config/db.js");
 
 const bookRouter = require("./routes/bookRouter");
+const userRouter = require("./routes/userRouter");
 
 dotenv.config();
 
 const app = express();
+
+app.use(express.json());
 
 connectDB();
 
@@ -16,6 +19,7 @@ connectDB();
 // });
 
 app.use("/books", bookRouter);
+app.use("/users", userRouter);
 
 // api not found
 app.use((req, res, next) => {
